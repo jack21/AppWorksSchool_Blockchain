@@ -7,12 +7,12 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "get",
+				"name": "first",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "",
-						"type": "string"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -21,9 +21,59 @@
 			{
 				"inputs": [
 					{
-						"internalType": "string",
-						"name": "_text",
-						"type": "string"
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "get",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "last",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "length",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_key",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
 					}
 				],
 				"name": "set",
@@ -45,7 +95,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"SimpleStorage.sol": "MappingIteration"
+			"MappingIteration.sol": "MappingIteration"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -59,12 +109,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"SimpleStorage.sol": {
-			"keccak256": "0xc1c0abe2985f7bbe8e10b312d9271de6a1d729cfcae99180bfea10d9b9aacc9a",
+		"MappingIteration.sol": {
+			"keccak256": "0xe245797411c44db1690536918d8054f1ae207e02979bc56972b6087573d8e856",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://91ae6673d32377477e87787e7cf1d56e94ca24676f4eb0cfccece79593c3e92d",
-				"dweb:/ipfs/QmaNwCwS2QJHU2z6y3pi6imCghVUQ3CQraswJxNKs72NY4"
+				"bzz-raw://f48006be3f8a9f88df2cf29ca48957bd05a02dc2f7e67c11b07aa853cd564263",
+				"dweb:/ipfs/Qmcm5xJkNvqBirJkS8n6WfnvWSxRGwhGLfH31ppLB2Evb2"
 			]
 		}
 	},
