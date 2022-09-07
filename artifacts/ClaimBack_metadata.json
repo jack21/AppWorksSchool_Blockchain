@@ -1,0 +1,75 @@
+{
+	"compiler": {
+		"version": "0.8.16+commit.07a7930e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "claim",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "send",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"ClaimBack.sol": "ClaimBack"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"ClaimBack.sol": {
+			"keccak256": "0xd42ac041148b4225e213fda27d2fdebbdcd04cee7bc400f76141817ef7c99783",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://bcaedf32b98d72afe3116f8970dacb800785ad6c2e63a4f46f0b8b142cd4b0b7",
+				"dweb:/ipfs/QmbmPRGXuu9rFECoUWfMv37XuB7hRGuKVj7Sq8U2Xug5WG"
+			]
+		}
+	},
+	"version": 1
+}
