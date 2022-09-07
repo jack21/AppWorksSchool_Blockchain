@@ -6,26 +6,28 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"name": "getArray",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "a",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "b",
+						"name": "_index",
 						"type": "uint256"
 					}
 				],
-				"name": "sum",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
+				"name": "remove",
+				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			}
@@ -43,7 +45,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Week5/TodoList.sol": "ICallee"
+			"Week5/Array1.sol": "Array1"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -57,12 +59,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Week5/TodoList.sol": {
-			"keccak256": "0x0e0f7f2f58cfdd35aa4d1d0611d547ede6b89f0fe19b1b509872f867a6e7a6a4",
+		"Week5/Array1.sol": {
+			"keccak256": "0x40c19419ba0cfdcea44757f0fc5ad913ba4be33c8b764dfefb0fef94149e5af3",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://91db7a939cc7c4dd5d8af5bf2ba500cc3e214af274c4ca44de6ae144c6839d14",
-				"dweb:/ipfs/QmVM7QM5ULXNyfcXU88JDh3zGXYHCJfDfazcCJkSj3zTfz"
+				"bzz-raw://68fecb17d4cc00b98ff8b0cb5a63cf680422f8033804db9d138925b1b6ddcc5d",
+				"dweb:/ipfs/QmdQfK2rnPmRjDf4wcZJsmsPHdF4MWG5Gkg3i1Ca1E2WKs"
 			]
 		}
 	},

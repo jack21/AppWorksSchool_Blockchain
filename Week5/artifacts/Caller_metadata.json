@@ -48,7 +48,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Week5/CallerIntf.sol": "Caller"
+			"Week5/TodoList.sol": "Caller"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -62,7 +62,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"Week5/CallerIntf.sol": {
+		"Week5/TodoList.sol": {
 			"keccak256": "0x0e0f7f2f58cfdd35aa4d1d0611d547ede6b89f0fe19b1b509872f867a6e7a6a4",
 			"license": "GPL-3.0",
 			"urls": [

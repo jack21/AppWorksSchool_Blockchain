@@ -10,6 +10,9 @@ contract ClaimBack {
     
     constructor() payable{}
 
+    receive() external payable {
+    }
+    
     function transfer() external payable returns(bytes memory) {
         // payable(CONTRACT).transfer(1000000000000000);
         (bool success, bytes memory data) = CONTRACT.call{value:1000000000000000}("");
@@ -19,9 +22,6 @@ contract ClaimBack {
         return data;
     }
 
-    receive() external payable {
-    }
-    
     function claim() external payable returns(bytes memory) {
         (bool success, bytes memory data) = CONTRACT.call(abi.encodeWithSignature("claim(uint256)", 1));
         if (!success) {
