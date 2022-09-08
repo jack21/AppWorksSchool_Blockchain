@@ -45,7 +45,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Week5/ArrayRemoveShift.sol": "Array1"
+			"Week5/ArrayRemoveShift.sol": "ArrayRemoveSArrayRemoveReplacehift"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -60,11 +60,11 @@
 	},
 	"sources": {
 		"Week5/ArrayRemoveShift.sol": {
-			"keccak256": "0x40c19419ba0cfdcea44757f0fc5ad913ba4be33c8b764dfefb0fef94149e5af3",
+			"keccak256": "0xef2cfe7cac242cbc23589429329e6aa2316abc25407a102634a660f3e7a59e3b",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://68fecb17d4cc00b98ff8b0cb5a63cf680422f8033804db9d138925b1b6ddcc5d",
-				"dweb:/ipfs/QmdQfK2rnPmRjDf4wcZJsmsPHdF4MWG5Gkg3i1Ca1E2WKs"
+				"bzz-raw://71c52a9a7f65bdfe63b696e52f5f768687d6c3112bcd4df659c6d923f77ab4f5",
+				"dweb:/ipfs/QmUd5YGh1WTUiYGr6QvwxmtBT9qeG4wfqK4QSPGaYQm6e7"
 			]
 		}
 	},

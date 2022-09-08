@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.16+commit.07a7930e"
+		"version": "0.8.7+commit.e28d00a7"
 	},
 	"language": "Solidity",
 	"output": {
@@ -45,7 +45,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Week5/ArrayRemoveShift.sol": "Array1"
+			"Week5/ArrayRemoveReplace.sol": "ArrayRemoveShift"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -53,18 +53,18 @@
 			"bytecodeHash": "ipfs"
 		},
 		"optimizer": {
-			"enabled": true,
+			"enabled": false,
 			"runs": 200
 		},
 		"remappings": []
 	},
 	"sources": {
-		"Week5/ArrayRemoveShift.sol": {
-			"keccak256": "0x40c19419ba0cfdcea44757f0fc5ad913ba4be33c8b764dfefb0fef94149e5af3",
+		"Week5/ArrayRemoveReplace.sol": {
+			"keccak256": "0xb2a0787ae94f582812ceda39b1e0cd811621f3acafbb37ef33592392bf558db6",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://68fecb17d4cc00b98ff8b0cb5a63cf680422f8033804db9d138925b1b6ddcc5d",
-				"dweb:/ipfs/QmdQfK2rnPmRjDf4wcZJsmsPHdF4MWG5Gkg3i1Ca1E2WKs"
+				"bzz-raw://c97c7e17f4c6b95c3bbb02cb1d6cebb7141d635ecb4db42928fa520f6ead7cb2",
+				"dweb:/ipfs/QmRVaEDDGVueW75QMNnppX3hxzegok8M47Lq1Rmb3cweof"
 			]
 		}
 	},

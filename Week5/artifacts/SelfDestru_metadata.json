@@ -1,0 +1,53 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "selfDestruct",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Week5/SelfDestruct.sol": "SelfDestru"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Week5/SelfDestruct.sol": {
+			"keccak256": "0x6eb610396df34321d319e285af35e5917a0030025deca18ee61a72c440675c8d",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://66bcd9f7e1c3828555fa4c028af28c20db8b01c871c91f892b352fa528f749bb",
+				"dweb:/ipfs/QmYVKCHLnPj7neSe5NRBpjJ8Myhh8opvurrsKMtLxFtm1h"
+			]
+		}
+	},
+	"version": 1
+}
