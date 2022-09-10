@@ -4,20 +4,7 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [
-			{
-				"inputs": [],
-				"stateMutability": "payable",
-				"type": "constructor"
-			},
-			{
-				"inputs": [],
-				"name": "selfDestruct",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			}
-		],
+		"abi": [],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -46,11 +33,11 @@
 	},
 	"sources": {
 		"Ethernaut/E07_Force.sol": {
-			"keccak256": "0xd564e04cfb8c613940b9010e412aa02d57b6f96b734fee195911fe27cf7748ee",
+			"keccak256": "0x5a90b34c5462ac269538fdad876c37e0af5515313402a3606ec7f916631aafdc",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://90b73fa5354944baaabaf0e3b21800c084603568ed243e366d5c870cb7fd121a",
-				"dweb:/ipfs/QmRA3GADNvWeAxrn8KfkNDmvus9wsJJL1Jdy98mewhn7JS"
+				"bzz-raw://29a25fedc3de78429bcb2743922ef511156bee227abe60d7b1adfdd8ec0ca396",
+				"dweb:/ipfs/QmNiJFLJ7N7VpQFfb183WpnV6LJhLxg7REAGojsKry7fzr"
 			]
 		}
 	},

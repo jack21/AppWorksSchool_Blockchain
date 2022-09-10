@@ -1,0 +1,58 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "selfDestruct",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Ethernaut/E10_Re-entrancy.sol": "E10_Reentrancy"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Ethernaut/E10_Re-entrancy.sol": {
+			"keccak256": "0x986dc04992354a1062197812f2645695065c81e92490c7425e95bd9bfdd8de46",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://4060304e7f0d50a47d79006752e431e0b3e935bf5048427ba68529f5c9dc2d36",
+				"dweb:/ipfs/QmRBdhvrnFS8gD5tfgTHBPyPRQpkQ6SDbdwgeBktGeDAFp"
+			]
+		}
+	},
+	"version": 1
+}

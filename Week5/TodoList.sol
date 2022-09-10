@@ -15,13 +15,24 @@ contract TodoList {
     }
 
     // 更新 Todo 的內容
-    function updateTodo(uint _index, string calldata _text) external  {
+    function updateTodo(uint _index, string calldata _text) external {
         require(_index < todoList.length);
         todoList[_index].text = _text;
     }
 
+    // 刪除某個 Todo（用到 Array-1 的概念）
+    function deleteTodo(uint _index) external {
+        require(_index < todoList.length);
+        // 從指定要移除的 index 開始 loop，複製後一個元素的內容值
+        for (uint i = _index; i < todoList.length - 1; i++) {
+            todoList[i] = todoList[i+1];
+        }
+        // 移除 array 內最後一個元素
+        todoList.pop();
+    }
+
     // 勾選或反勾選 Todo
-    function toggleTodo(uint _index) external  {
+    function toggleTodo(uint _index) external {
         require(_index < todoList.length);
         todoList[_index].isCheck = !todoList[_index].isCheck;
     }
@@ -31,4 +42,6 @@ contract TodoList {
         return todoList[_index];
     }
 }
+
+
 

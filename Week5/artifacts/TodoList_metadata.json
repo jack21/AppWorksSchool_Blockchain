@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.16+commit.07a7930e"
+		"version": "0.8.7+commit.e28d00a7"
 	},
 	"language": "Solidity",
 	"output": {
@@ -14,6 +14,19 @@
 					}
 				],
 				"name": "createTodo",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "deleteTodo",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -94,7 +107,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Week5/Array1.sol": "TodoList"
+			"Week5/TodoList.sol": "TodoList"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -102,18 +115,18 @@
 			"bytecodeHash": "ipfs"
 		},
 		"optimizer": {
-			"enabled": true,
+			"enabled": false,
 			"runs": 200
 		},
 		"remappings": []
 	},
 	"sources": {
-		"Week5/Array1.sol": {
-			"keccak256": "0x96df6e1341a5e749da0ca2bd9cbde87deecb9a4d3773a3a2f0f031a4e2d97312",
+		"Week5/TodoList.sol": {
+			"keccak256": "0x07e29e27463d89241d831472e2a2b0b4a055556f6d3f22ee5d3731e2f47298ac",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://2b2fe5bba40d9c3f9aa0b2b63792345cf5ad2820908d3aa58b4dc4a71a08c1b8",
-				"dweb:/ipfs/QmZvLTfmEXqHFTjLTuZrSgxZtpBUyJKrUwJivzHzBS29EH"
+				"bzz-raw://a1f14d191b578e759ea3b06e0ef496575b77e8816b5ed76f45d9d37af9c066c6",
+				"dweb:/ipfs/QmZpD68yDJEg92wdB6EB18VxJ9ezUrhGMw7GAmjZWY5A8i"
 			]
 		}
 	},

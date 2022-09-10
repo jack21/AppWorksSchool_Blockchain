@@ -45,7 +45,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Week5/ArrayRemoveReplace.sol": "ArrayRemoveShift"
+			"Week5/ArrayRemoveShift.sol": "ArrayRemoveShift"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -59,7 +59,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"Week5/ArrayRemoveReplace.sol": {
+		"Week5/ArrayRemoveShift.sol": {
 			"keccak256": "0xb2a0787ae94f582812ceda39b1e0cd811621f3acafbb37ef33592392bf558db6",
 			"license": "GPL-3.0",
 			"urls": [
