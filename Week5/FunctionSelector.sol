@@ -10,5 +10,10 @@ contract FunctionSelector {
     function encodeWithSignatureManual() external pure returns(bytes4) {
         return bytes4(keccak256(bytes("sum(uint256,uint256)")));
     }
+
+    function encodeFunctionSelector() external pure returns(bytes4) {
+        // return bytes4(abi.encodeWithSignature("AppWorks(bool,uint256[],address,string)"));
+        return bytes4(keccak256(bytes("AppWorks(bool,uint256[],address,string)")));
+    }
 }
 
