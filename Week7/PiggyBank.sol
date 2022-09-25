@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.17;
 
-contract EthWallet {
+contract PiggyBank {
     address payable owner;
     
     constructor() {
@@ -12,8 +12,8 @@ contract EthWallet {
     receive() external payable {
     }
 
-    function withdraw(uint _amount) external {
+    function withdraw() external {
         require(msg.sender == owner, "not owner");
-        owner.transfer(_amount);
+        selfdestruct(owner);
     }
 }

@@ -72,12 +72,16 @@ contract MultisigWallet is OwnerManager {
         uint16 confirmCount;
     }
     Transaction[] public trans;
+    // 記錄 transaction_id => owner => bool，用意是看 owner 確認過沒
+    mapping(uint => mapping(address => bool)) public isConfirmed;
 
+    // 確認 txId 要存在
     modifier txExist(uint txId) {
         require(txId >= trans.length, "invalid txId");
         _;
     }
 
+    // 確認 txId 還沒被執行過
     modifier txNotExecute(uint txId) {
         require(!trans[txId - 1].isExecute, "transaction executed");
         _;
@@ -92,7 +96,10 @@ contract MultisigWallet is OwnerManager {
 
     // 確認交易
     function confirmTransaction(uint txId) external onlyOwner txExist(txId) txNotExecute(txId) {
-        trans[txId - 1].confirmCount++;
+        require(!isConfirmed[txId][msg.sender], "confirmed");
+        Transaction storage tran = trans[txId - 1];
+        tran.confirmCount += 1;
+        isConfirmed[txId][msg.sender] = true;
     }
 
     // 執行交易
