@@ -39,6 +39,8 @@ contract AppWorks is ERC721, Ownable {
     //Check user has sufficient funds
     require(_mintAmount > 0, "at lease 1 NFT");
     require(msg.value >= _mintAmount * price, "get out");
+    // owner 最多可以 mint 20 個、其他人最多可以 Mint 10 個
+    require(isMintable(msg.sender, _mintAmount), "over mint count");
     // Mint
     for (uint i = 0; i < _mintAmount; i++) {
         uint tokenId = _nextTokenId.current();
@@ -93,6 +95,13 @@ contract AppWorks is ERC721, Ownable {
   }
 
   // Set mint per user limit to 10 and owner limit to 20 - Week 8
+  function isMintable(address _who, uint _mintAmount) internal view returns(bool) {
+    if (_who == owner()) {
+      return balanceOf(_who) + _mintAmount <= 20;
+    } else {
+      return balanceOf(_who) + _mintAmount <= 10;
+    }
+  }
 
   // Implement toggleReveal() Function to toggle the blind box is revealed - week 9
 
